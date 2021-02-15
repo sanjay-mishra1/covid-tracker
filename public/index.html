@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel=“manifest” href="manifest.json" />
+
+  <meta name="theme-color" content="#f5f6fa" />
+  <meta name="Covid Tracker" content="Daily Covid data" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>Covid Tracker</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+    }
+
+    .splash {
+      position: absolute;
+      display: flex;
+      height: 100%;
+      width: 100%;
+    }
+
+    .splash img {
+      width: 80px;
+      height: 80px;
+      place-self: center;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="splash">
+      <img src="logo192.png" alt='covid-tracker' />
+    </div>
+  </div>
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./worker.js').then(function (registration) {
+
+        }, function (err) {
+
+        }).catch(function (err) {
+
+        });
+      });
+    } else {
+
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.home {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f5f6fa;
+  padding: 20px;
+}
+
+.app__dropdown {
+  background-color: white;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__header > h1 {
+  color: #fc3c3c;
+  font-size: 2rem;
+  flex: 0.9;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+.app__information > h3 {
+  color: #6a5d5d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
+}
+
+@media (max-width: 990px) {
+  .home {
+    flex-direction: column;
+  }
+}
+
+.app__right {
+  display: flex;
+  flex-direction: column;
+}
+.app__right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.app_graph {
+  flex-grow: 1;
+}
+
+.menu-item {
+  cursor: pointer;
+  width: auto;
+  overflow: hidden;
+  font-size: 1rem;
+  box-sizing: border-box;
+  min-height: 48px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 6px;
+  white-space: nowrap;
+  letter-spacing: 0.00938em;
+  padding-bottom: 6px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.graph-head {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.MuiButton {
+  text-transform: none;
+  border-radius: 25px;
+}
+.countryinfo {
+  display: flex;
+}
+.card-title {
+  height: min-content;
+  align-self: center;
+  margin-left: 1rem;
+  padding: 14px;
+  color: #6a5d5d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+.custom-day-input {
+  position: relative;
+  float: left;
+  margin-bottom: 61px;
+}
+
+.custom-day-input:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "days";
+}
+.MuiInput-input {
+  text-align: center;
+  padding-right: 20px;
+  padding-top: 4px;
+}
+.icon-button {
+  margin: 10px;
+  padding: 3px;
+  cursor: pointer;
+}
+.icon-button:hover {
+  background-color: #a2a2a275;
+  border-radius: 50%;
+}
+.error-message {
+  margin: 10px;
+  text-align: center;
+}

@@ -1,0 +1,49 @@
+{
+  "short_name": "Covid Tracker",
+  "name": "Covid Tracker",
+  "description": "Get daily covid data",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "shortcuts": [
+    {
+      "name": "Todays cases",
+      "short_name": "Cases",
+      "description": "View new covid- 19 cases",
+      "url": "/?type=cases",
+      "icons": [{ "src": "./images/icon-red.png", "sizes": "202x202" }]
+    },
+    {
+      "name": "Todays Deaths",
+      "short_name": "Deaths",
+      "description": "View new covid- 19 Deaths",
+      "url": "/?type=deaths",
+      "icons": [{ "src": "./images/icon-orange.png", "sizes": "202x202" }]
+    },
+    {
+      "name": "Todays Recovery",
+      "short_name": "Recovery",
+      "description": "View new covid- 19 Recoveries",
+      "url": "/?type=recovered",
+      "icons": [{ "src": "./images/icon-green.png", "sizes": "204x204" }]
+    }
+  ],
+  "display": "standalone",
+  "theme_color": "#f5f6fa",
+  "background_color": "#ffffff"
+}
